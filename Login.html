@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#blue">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" href="Resources/Icons/unidad.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="Resources/Icons/unidad.png">
+    <title>TechPro-Solutions.com Hardware, Computadoras, Laptops & Más</title>
+</head>
+<body>
+    <header id="Inicio">
+        <div class="logo">
+            <img src="Images/LogoUnidad.png" alt="Logo de Principal" class="logo">
+        </div>
+        <div class="search-bar">
+        <form action="#" method="GET">
+            <input type="text" id="searchInput" placeholder="¿Qué producto buscas el día de hoy?">
+            <button onclick="searchProducts()">Buscar</button>
+        </form>
+    </div>
+        <nav class="navegacion">
+            <h1>Lo Mejor en Tecnología & Cómputo</h1>
+                <ul>
+                    <li><a href="index.html">Inicio -- </a></li>
+                    <li><a href="Conocenos.html">Conócenos --</a></li>
+                    <li><a href="Productos.html">Productos -- </a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
+                </ul>
+                <div class="top-buttons">
+                    <button class="account-button" onclick="redirectToHome()">Bienvenido a TechPro-Solutions</button>
+                    <button class="orders-button" onclick="redirectToContact()">Tiendas</button>
+                    <button class="cart-button">
+                        <a href="Productos.html">-></a>
+                        <img src="Resources/Icons/carrito.png" alt="Carrito de compras">
+                    </button>
+            
+                    <!-- Botones con despliegue -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Ingresar &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Login.html">Iniciar Sesión </a>
+                            <a href="Registro.html">Registrarse</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Favoritos &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">En esta sección puedes agregar tus productos favoritos</a>
+                            <a href="Productos.html">No has añadido productos a tu lista de favoritos</a>
+                            <a href="Productos.html">¡Agrega algunos!</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Productos Nuevos &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">En esta sección puedes ver los productos en existencia</a>
+                            <a href="Productos.html">Hay diversos productos que podrian interesarte</a>
+                            <a href="Productos.html">¡Adquiere algunos!</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Configurador PC &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">Configurar una PC</a>
+                            <a href="Productos.html">En TechPro hay variedad de PC</a>
+                            <a href="Productos.html">Solo elíge tu favorito</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Centro de información &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Conocenos.html">Quiénes somos</a>
+                            <a href="Contacto.html">Contacto</a>
+                            <a href="Conocenos.html">Acerca de TechPro-Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div id="container">
+                <section id="login">
+                    <div class="container">
+                        <h2>Iniciar sesión</h2>
+                        <form action="#" method="post">
+                            <div class="input-group">
+                                <label for="username">Usuario:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit">Iniciar sesión</button>
+                        </form>
+                    </div>
+                </section>
+                <section id="contact">
+                    <div class="container">
+                        <h2>Envíanos tus comentarios!!!</h2>
+                        <form action="#" method="POST">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+                <footer>
+                    <div class="container">
+                        <div class="footer-section">
+                            <h3>Dirección</h3>
+                            <p>Av. Luis Donaldo Colosio Murrieta 158-Local 13, Prados del Centenario, 83260 Hermosillo, Sonora</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Redes Sociales</h3>
+                            <ul class="social-media-list">
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <img src="Resources/Icons/FacebookIcon.png" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/?lang=es" target="_blank">
+                                        <img src="Resources/Icons/Xicon.png" alt="Twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <img src="Resources/Icons/InstagramIcon.png" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/es/" target="_blank">
+                                        <img src="Resources/Icons/TiktokIcon.png" alt="TikTok">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.com/" target="_blank">
+                                        <img src="Resources/Icons/discord.png" alt="Discord">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://youtube.com/" target="_blank">
+                                        <img src="Resources/Icons/youtube.png" alt="Youtube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mx.linkedin.com/" target="_blank">
+                                        <img src="Resources/Icons/linkedin.png" alt="Linkedin">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.whatsapp.com/" target="_blank">
+                                        <img src="Resources/Icons/whatsapp.png" alt="Whatsapp">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Contacto</h3>
+                            <p>Correo: soporte@techpro.com</p>
+                            <p>Teléfono: 6623946757</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Acerca de TechPro-Solutions</h3>
+                            <p>TechPro Solutions es una empresa líder en el diseño y ensamblaje de equipos de computación a medida para clientes exigentes en el ámbito profesional y empresarial. Con una sólida trayectoria en el sector, nos dedicamos a proporcionar soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente. Nuestro equipo de expertos en ingeniería y tecnología trabaja en estrecha colaboración con los clientes para entender sus requisitos y ofrecer sistemas de alto rendimiento, confiables y eficientes.</p>
+                            <p>©TechPro Solutions</p>
+                            <p>Copyright © 2024 Pagina E-Commerce creada por Martín Castro</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="JavaScript/Script.js"></script>
+    </body>
+</html>

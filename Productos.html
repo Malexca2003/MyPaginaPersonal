@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#blue">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" href="Resources/Icons/unidad.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="Resources/Icons/unidad.png">
+    <title>TechPro-Solutions.com Hardware, Computadoras, Laptops & Más</title>
+</head>
+<body>
+    <header id="Inicio">
+        <div class="logo">
+            <img src="Images/LogoUnidad.png" alt="Logo de Principal" class="logo">
+        </div>
+        <div class="search-bar">
+        <form action="#" method="GET">
+            <input type="text" id="searchInput" placeholder="¿Qué producto buscas el día de hoy?">
+            <button onclick="searchProducts()">Buscar</button>
+        </form>
+    </div>
+        <nav class="navegacion">
+            <h1>Lo Mejor en Tecnología & Cómputo</h1>
+                <ul>
+                    <li><a href="index.html">Inicio -- </a></li>
+                    <li><a href="Conocenos.html">Conócenos --</a></li>
+                    <li><a href="Productos.html">Productos -- </a></li>
+                    <li><a href="Contacto.html">Contacto </a></li>
+                </ul>
+                <div class="top-buttons">
+                    <button class="account-button" onclick="redirectToHome()">Bienvenido a TechPro-Solutions</button>
+                    <button class="orders-button" onclick="redirectToContact()">Tiendas</button>
+                    <button class="cart-button">
+                        <a href="Productos.html">-></a>
+                        <img src="Resources/Icons/carrito.png" alt="Carrito de compras">
+                    </button>
+            
+                    <!-- Botones con despliegue -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Ingresar &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Login.html">Iniciar Sesión </a>
+                            <a href="Registro.html">Registrarse</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Favoritos &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">En esta sección puedes agregar tus productos favoritos</a>
+                            <a href="Productos.html">No has añadido productos a tu lista de favoritos</a>
+                            <a href="Productos.html">¡Agrega algunos!</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Productos Nuevos &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">En esta sección puedes ver los productos en existencia</a>
+                            <a href="Productos.html">Hay diversos productos que podrian interesarte</a>
+                            <a href="Productos.html">¡Adquiere algunos!</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Configurador PC &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Productos.html">Configurar una PC</a>
+                            <a href="Productos.html">En TechPro hay variedad de PC</a>
+                            <a href="Productos.html">Solo elíge tu favorito</a>
+                        </div>
+                    </div>
+            
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Centro de información &#9660;</button>
+                        <div class="dropdown-content">
+                            <!-- Contenido del desplegable -->
+                            <a href="Conocenos.html">Quiénes somos</a>
+                            <a href="Contacto.html">Contacto</a>
+                            <a href="Conocenos.html">Acerca de TechPro-Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="productos">
+            <div class="container">
+                <h2>Los Mejores Productos de Computadoras, Laptops & Más</h2>
+                <div class="product-row">
+                    <div class="product">
+                        <img src="Products/pc1.png" alt="Producto 1">
+                        <h3>Computadora PC GAMING FERRET</h3>
+                        <p>$10,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc2.png" alt="Producto 2">
+                        <h3>Computadora PC GAMING WHITE WHALE</h3>
+                        <p>$5,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc3.png" alt="Producto 3">
+                        <h3>Computadora PC GAMING FERRET PRO</h3>
+                        <p>$13,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc4.png" alt="Producto 4">
+                        <h3>Computadora PC GAMING AORUS PC FOX</h3>
+                        <p>$15,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc5.png" alt="Producto 5">
+                        <h3>Computadora PC GAMING DPC DELUXE</h3>
+                        <p>$18,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc6.png" alt="Producto 6">
+                        <h3>Computadora PC GAMING LITTLE OWL</h3>
+                        <p>$12,499.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc7.png" alt="Producto 7">
+                        <h3>Computadora PC GAMING SALAMANDER</h3>
+                        <p>$8,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc8.png" alt="Producto 8">
+                        <h3>Computadora PC GAMING BUNNY</h3>
+                        <p>$23,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc9.png" alt="Producto 9">
+                        <h3>Computadora PC GAMING ANTELOPE</h3>
+                        <p>$12,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/pc10.png" alt="Producto 10">
+                        <h3>Computadora PC DPC DELUXE PLUS</h3>
+                        <p>$24,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/lap1.png" alt="Producto 11">
+                        <h3>Laptop Gamer Lenovo LOQ 15IRH8 15.6" Full HD</h3>
+                        <p>$21,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/lap2.png" alt="Producto 12">
+                        <h3>Laptop Gamer Gigabyte Aorus 17 </h3>
+                        <p>$27,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/lap3.png" alt="Producto 13">
+                        <h3>Laptop Gamer XPG Xenia 15G 15.6" Full HD</h3>
+                        <p>$27,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/lap4.png" alt="Producto 14">
+                        <h3>Laptop Gamer Dell Inspiron G5 5511 15.6 Full HD</h3>
+                        <p>$33,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/lap5.png" alt="Producto 15">
+                        <h3>Laptop Gamer Lenovo Legion 5 15ITH6 15.6" Full HD </h3>
+                        <p>$23,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/monitor1.png" alt="Producto 16">
+                        <h3>Monitor Gamer Cooler Master GA271 LCD 27</h3>
+                        <p>$2,299.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Gpu1.png" alt="Producto 17">
+                        <h3>Tarjeta de video NVIDIA GeForce RTX 4090 24GB OC</h3>
+                        <p>$39,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Gpu2.png" alt="Producto 18">
+                        <h3>Tarjeta de VIdeo AMD Radeon RX 7900 XTX GAMING</h3>
+                        <p>$18,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Silla1.png" alt="Producto 19">
+                        <h3>Silla Gamer Munfrost NASH</h3>
+                        <p>$6,799.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Silla2.png" alt="Producto 20">
+                        <h3>Silla Gamer Corsair T3 Rush Gaming 2023 Grey Charcoal</h3>
+                        <p>$4,299.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Teclado1.png" alt="Producto 21">
+                        <h3>Teclado Gamer Mecanico ASUS ROG STRIX SCOPE</h3>
+                        <p>$1,069.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/mouse1.png" alt="Producto 22">
+                        <h3>Mouse Inalambrico Gamer Logitech PRO X SUPERLIGHT 2 WHITE</h3>
+                        <p>$1,999.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/mouse2.png" alt="Producto 23">
+                        <h3>Mouse Inalambrico Gamer Logitech PRO X SUPERLIGHT 2 Black</h3>
+                        <p>$2,299.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                    <div class="product">
+                        <img src="Products/Cpu1.png" alt="Producto 24">
+                        <h3>Procesador AMD Ryzen 7 5800X3D</h3>
+                        <p>$6,299.00</p>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>            
+            <section id="banners">
+                <div class="container">
+                    <h2>Los Destacados del día ¡No los dejes pasar!</h2>
+                    <div class="product">
+                        <img src="Images/Banner1.png" alt="Producto 1">
+                        <h3>Compra productos HyperX y llévate gratis códigos DLC de Call of duty Modern Warfare III</h3>
+                        <p>Descripción: Nuestro los productos HyperX es una obra maestra de la ingeniería moderna, diseñado con precisión y atención al detalle para ofrecer un rendimiento incomparable y una fiabilidad excepcional. Equipado con componentes de alta calidad y tecnologías de vanguardia, este equipo garantiza una experiencia informática fluida y eficiente. Su diseño elegante y sofisticado no solo mejora la estética de tu espacio de trabajo, sino que también refleja su potencia y rendimiento. Es la elección perfecta para los usuarios más exigentes que buscan un equipo de alto nivel para sus tareas diarias.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner2.png" alt="Producto 2">
+                        <h3>Canvas 32Q Píxeles Perfectos, Minima espacio, juegos en QHD, Gran rendimiento, Respuesta de 1ms</h3>
+                        <p>Descripción: Sumérgete en el mundo de la tecnología avanzada con nuestro Canvas 32Q. Diseñado para satisfacer las necesidades de los profesionales y entusiastas de la tecnología, este equipo ofrece un rendimiento superior en todas las áreas. Su potente procesador, gráficos de alta calidad y amplia capacidad de almacenamiento garantizan un funcionamiento suave y eficiente, incluso en las tareas más exigentes. Además, su diseño robusto y duradero asegura una larga vida útil, convirtiéndolo en una inversión inteligente para tu futuro tecnológico.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner3.png" alt="Producto 3">
+                        <h3> CyberPower Protege Tu PC - Protege tu Inversion con Baterías de respaldo para tus equipos de computo y servidores</h3>
+                        <p>Descripción: Con CyberPower protege tu pc es una solución versátil y personalizable que se adapta a tus necesidades cambiantes. Con una amplia variedad de opciones de configuración, puedes personalizar este equipo para que se ajuste perfectamente a tus requerimientos específicos. Ya sea que necesites un potente sistema de edición de video, una estación de trabajo para diseño gráfico o un centro de entretenimiento multimedia, este equipo te proporciona la flexibilidad y el rendimiento que necesitas para realizar tus tareas con facilidad y eficiencia.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner4.png" alt="Producto 4">
+                        <h3>Conoce tu Nuevo Superpoder con NZXT FUNCTION 2 + LIFT 2</h3>
+                        <p>Descripción: Descubre la perfecta combinación entre diseño estilizado y funcionalidad con los perifericos de NZXT. Equipado con componentes de alta calidad y un diseño elegante, este equipo no solo ofrece un rendimiento excepcional sino también una estética atractiva que complementará cualquier entorno. Su pantalla de alta resolución, teclado ergonómico y características avanzadas hacen de este equipo la elección ideal para aquellos que buscan un equilibrio entre estilo, rendimiento y comodidad en su experiencia informática.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner5.png" alt="Producto 5">
+                        <h3>Haz tu PC más rapida, Actualiza con Memorias Ram y SSD de Kingston</h3>
+                        <p>Descripción: Maximiza tu productividad y disfruta de un rendimiento excepcional con nuestro con los productos de Kingston. Diseñado para usuarios que requieren un equipo potente y confiable, este dispositivo está equipado con las últimas tecnologías y características avanzadas que garantizan un funcionamiento suave y eficiente en todas las tareas. Ya sea que estés trabajando en documentos, navegando por Internet, editando fotos o disfrutando de tu contenido multimedia favorito, este equipo te ofrece la potencia y la versatilidad que necesitas para realizar tus actividades diarias con facilidad.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner6.png" alt="Producto 6">
+                        <h3>Obtiene en TechPro-Solutions un 25% de descuento en las ultimas piezas de HyperX</h3>
+                        <p>Descripción: Experimenta el rendimiento superior y la fiabilidad inigualable con los productos de HyperX. Diseñado para satisfacer las necesidades más exigentes de los usuarios profesionales y creativos, este equipo ofrece un rendimiento sólido en todas las áreas. Su potente procesador, gráficos de alta calidad y amplia capacidad de almacenamiento garantizan un funcionamiento fluido y eficiente, incluso en las aplicaciones más intensivas. Además, su diseño ergonómico y su construcción robusta aseguran una experiencia informática excepcional en cualquier situación.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner7.png" alt="Producto 7">
+                        <h3>AMD RYZEN™ 8000G - Disfruta de una experiencia con un procesador AMD Ryzen™ 8000G sin tarjeta grafica dedicada</h3>
+                        <p>Descripción: Con los procesadores de AMD es una solución integral que combina rendimiento, fiabilidad y versatilidad en un solo dispositivo. Con una amplia variedad de opciones de personalización y configuración, este equipo se adapta perfectamente a tus necesidades específicas, ya sea para trabajo, estudio o entretenimiento. Equipado con componentes de alta calidad y características avanzadas, ofrece un rendimiento constante y confiable que te ayudará a alcanzar tus objetivos con facilidad. Su diseño elegante y su funcionamiento eficiente hacen de este equipo la elección ideal para aquellos que buscan excelencia en cada detalle.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner8.png" alt="Producto 8">
+                        <h3>APPLE - iPad Hazlo de todo, como si nada. Aprovecha los descuentos y envios gratis en IPad</h3>
+                        <p>Descripción: Descubre la comodidad y la eficiencia en un solo dispositivo con los productos de Apple. Diseñado para ofrecer un rendimiento óptimo y una experiencia de usuario excepcional, este equipo es la elección perfecta para aquellos que buscan un sistema todo en uno que se adapte a sus necesidades diarias. Su diseño compacto, características avanzadas y facilidad de uso hacen que sea ideal para trabajar, estudiar y disfrutar de tu contenido multimedia favorito. Además, su diseño elegante y su construcción duradera garantizan una experiencia informática excepcional en cualquier entorno.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner9.png" alt="Producto 9">
+                        <h3>Máxima velocidad para tu PC Gamer con las memorias RAM DDR5 de PREDATOR</h3>
+                        <p>Descripción: Diseñado para los profesionales más exigentes, los productos de Predator ofrece un rendimiento superior y una confiabilidad inigualable en cada tarea. Equipado con los mejores componentes y tecnologías de vanguardia, este equipo está preparado para enfrentar cualquier desafío con facilidad, garantizando un funcionamiento suave y eficiente en todo momento. Su diseño ergonómico, características avanzadas y construcción robusta hacen de este equipo la elección perfecta para aquellos que buscan un rendimiento excepcional y una durabilidad sin compromisos.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner10.png" alt="Producto 10">
+                        <h3>Intel Core - Compra un procesador intel participante y obtén gratis el juego de Assasin's Creed Mirage</h3>
+                        <p>Descripción: Experimenta la innovación y el rendimiento en su máxima expresión con los productos de intel. Equipado con tecnologías de vanguardia y características avanzadas, este equipo te ofrece una experiencia informática excepcional que eleva tus expectativas. Su potente procesador, gráficos de alta calidad y amplia capacidad de almacenamiento garantizan un funcionamiento suave y eficiente en todas las tareas. Además, su diseño ergonómico, características avanzadas y construcción duradera hacen de este equipo la herramienta perfecta para aquellos que buscan destacar en su trabajo y disfrutar de su tiempo libre con estilo.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner11.png" alt="Producto 11">
+                        <h3>CyberPower ¡Protege tus equipos ante apagones y sobretensiones con CyberPower!</h3>
+                        <p>Descripción: Nuestros equipos con los productos de CyberPower es una solución completa para tus necesidades de computación. Con un rendimiento sólido y una excelente relación calidad-precio, este equipo ofrece todo lo que necesitas para trabajar, estudiar y entretenerse. Equipado con componentes de alta calidad y un diseño funcional, es la elección ideal para aquellos que buscan un equipo confiable y eficiente sin comprometer la calidad. Su diseño elegante, características avanzadas y funcionamiento eficiente te proporcionarán una experiencia informática excepcional en cualquier situación.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner12.png" alt="Producto 12">
+                        <h3>Adiós a las sillas gamer, hola sillas comodas, relajate en su soporte y comodidad con Munfrost</h3>
+                        <p>Descripción: Con las sillas comodas de Munfrost, obtén un rendimiento excepcional y una durabilidad sin igual. Diseñado para resistir el paso del tiempo y las demandas diarias, este equipo es una inversión a largo plazo que te proporcionará años de uso confiable y eficiente. Equipado con componentes de alta calidad y características avanzadas, es la elección perfecta para aquellos que buscan un equipo robusto y duradero. Su diseño ergonómico, características avanzadas y funcionamiento eficiente te ayudarán a realizar tus tareas diarias con facilidad y comodidad.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner13.png" alt="Producto 13">
+                        <h3>Nuevos modelos de sillas profesionales de VERTAGEAR</h3>
+                        <p>Descripción: Maximiza tu potencial y alcanza tus objetivos con los productos de VERTAGEAR. Equipado con las últimas tecnologías y características avanzadas, este equipo te proporcionará las herramientas necesarias para lograr el éxito en tus proyectos profesionales y personales. Su rendimiento superior y su funcionamiento eficiente te permitirán trabajar de manera más productiva y creativa, superando tus expectativas en cada tarea. Además, su diseño ergonómico, características avanzadas y construcción duradera hacen de este equipo la elección perfecta para aquellos que buscan excelencia en cada detalle.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner14.png" alt="Producto 14">
+                        <h3>Participantes y Patrocinadores de los diseños y ensamblaje con Zotac, Asus, Gigabyte, TUF Gaming y Geforce RTX</h3>
+                        <p>Descripción: Descubre la versatilidad y el rendimiento con los Participantes y Patrocinadores. Con una amplia gama de opciones de personalización y configuración, este equipo se adapta perfectamente a tus necesidades y presupuesto. Equipado con componentes de alta calidad y un diseño ergonómico, te proporcionará una experiencia informática excepcional que te ayudará a ser más productivo y eficiente en tus tareas diarias. Su funcionamiento suave y eficiente, junto con su diseño elegante y su construcción duradera, hacen de este equipo la elección ideal para aquellos que buscan calidad, rendimiento y versatilidad en un solo dispositivo.</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Banner15.png" alt="Producto 15">
+                        <h3>Lo más confiable para tu PC - Memorias Ram Viper Steel - 16GB en Oferta</h3>
+                        <p>Descripción: Acelera tu pc con las Viper Steel es la elección perfecta para aquellos que buscan un equipo confiable y eficiente para satisfacer sus necesidades informáticas diarias. Con un diseño elegante, características avanzadas y un rendimiento constante, este equipo te ayudará a destacar en cualquier tarea, ya sea trabajo, estudio o entretenimiento. Equipado con componentes de alta calidad y un diseño ergonómico, es la herramienta ideal para aquellos que buscan calidad, rendimiento y versatilidad en un solo dispositivo. Su funcionamiento suave y eficiente, junto con su construcción duradera, hacen de este equipo una inversión inteligente para tu futuro tecnológico.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+                <section id="contact">
+                    <div class="container">
+                        <h2>Envíanos tus comentarios!!!</h2>
+                        <form action="#" method="POST">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+                <footer>
+                    <div class="container">
+                        <div class="footer-section">
+                            <h3>Dirección</h3>
+                            <p>Av. Luis Donaldo Colosio Murrieta 158-Local 13, Prados del Centenario, 83260 Hermosillo, Sonora</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Redes Sociales</h3>
+                            <ul class="social-media-list">
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <img src="Resources/Icons/FacebookIcon.png" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/?lang=es" target="_blank">
+                                        <img src="Resources/Icons/Xicon.png" alt="Twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <img src="Resources/Icons/InstagramIcon.png" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/es/" target="_blank">
+                                        <img src="Resources/Icons/TiktokIcon.png" alt="TikTok">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.com/" target="_blank">
+                                        <img src="Resources/Icons/discord.png" alt="Discord">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://youtube.com/" target="_blank">
+                                        <img src="Resources/Icons/youtube.png" alt="Youtube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mx.linkedin.com/" target="_blank">
+                                        <img src="Resources/Icons/linkedin.png" alt="Linkedin">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.whatsapp.com/" target="_blank">
+                                        <img src="Resources/Icons/whatsapp.png" alt="Whatsapp">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Contacto</h3>
+                            <p>Correo: soporte@techpro.com</p>
+                            <p>Teléfono: 6623946757</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Acerca de TechPro-Solutions</h3>
+                            <p>TechPro Solutions es una empresa líder en el diseño y ensamblaje de equipos de computación a medida para clientes exigentes en el ámbito profesional y empresarial. Con una sólida trayectoria en el sector, nos dedicamos a proporcionar soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente. Nuestro equipo de expertos en ingeniería y tecnología trabaja en estrecha colaboración con los clientes para entender sus requisitos y ofrecer sistemas de alto rendimiento, confiables y eficientes.</p>
+                            <p>©TechPro Solutions</p>
+                            <p>Copyright © 2024 Pagina E-Commerce creada por Martín Castro</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="JavaScript/Script.js"></script>
+    </body>
+</html>
